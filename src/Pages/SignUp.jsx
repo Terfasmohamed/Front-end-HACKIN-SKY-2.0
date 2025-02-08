@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RegistrationForm = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     email: '',
     firstName: '',
@@ -27,7 +27,7 @@ const RegistrationForm = () => {
   return (
     <>
     <div className=' bg-[url("./src/assets/background.svg")]  h-full w-full bg-cover bg-center mt-0 '>
-    <div className='flex flex-row items-center space-x-4 gap-x-96 ml-16'>  
+    <div className='flex flex-row items-center pt-6 space-x-4 gap-x-96 ml-16'>  
         <img src="src\assets\Frame 46.svg" alt="logo"  className='w-20'/>
         <div className='flex flex-col items-center gap-2 ' >
         <h1 className='text-4xl text-[#3D348B]'>REGISTRATION</h1>
@@ -151,7 +151,7 @@ const RegistrationForm = () => {
           </select>
         </div>
 
-        <div className="flex justify-end space-x-4 pt-4">
+        <div className="flex justify-end space-x-4 pt-4 gap-8">
           <button
             type="button"
             className="px-4 py-3 border bg-[#E6AF2E] border-gray-300 rounded-2xl hover:bg-yellow-500"
@@ -172,4 +172,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default SignUp;

@@ -4,14 +4,14 @@ const UserProfile = () => {
       return (
         <div className="bg-[url('./src/assets/background.svg')] min-h-screen w-full bg-cover bg-center mt-0">
           <NavBar2 />
-          <div className="bg-[#3D348B] rounded-3xl p-6 w-[70%] mx-auto mt-10 mb-24 flex flex-col gap-7">
+          <div className="bg-[#3D348B] rounded-3xl p-6 w-[70%] mx-auto mt-10 flex flex-col gap-7">
             {/* Top section with email/password and images */}
             <div className="flex justify-between gap-8">
               {/* Left side - inputs */}
               <div className="flex flex-col w-2/3 gap-7">
               <h1 className='text-[#E6AF2E] text-3xl font-bold mb-20 mt-10'>MY PROFILE</h1>
                 <div className="flex flex-col">
-                  <label className=" text-[#E6AF2E] font-bold">Email Address</label>
+                  <label className="text-[#E3AF2E] font-bold">Email Address</label>
                   <input 
                     className="w-full rounded-2xl p-3" 
                     type="text" 
@@ -21,7 +21,7 @@ const UserProfile = () => {
 
                 <div className="flex flex-col">
 
-                  <label className=" text-[#E6AF2E] font-bold">Password</label>
+                  <label className="text-[#E3AF2E] font-bold">Password</label>
                   <input 
                     className="w-full rounded-2xl p-3" 
                     type="password" 
@@ -40,7 +40,7 @@ const UserProfile = () => {
             {/* Rest of the form fields */}
             <div className="flex flex-col gap-7">
               <div>
-                <label className=" text-[#E6AF2E] font-bold">Phone Number</label>
+                <label className="text-[#E3AF2E] font-bold">Phone Number</label>
                 <input 
                   className="w-full rounded-2xl p-3" 
                   type="text" 
@@ -49,47 +49,11 @@ const UserProfile = () => {
               </div>
     
               <div>
-                <label className=" text-[#E6AF2E] font-bold">First Name</label>
+                <label className="text-[#E3AF2E] font-bold">First Name</label>
                 <input 
                   className="w-full rounded-2xl p-3" 
                   type="text" 
                   placeholder="Khelil Rafik" 
-                />
-              </div>
-    
-              <div>
-                <label className=" text-[#E6AF2E] font-bold">Last Name</label>
-                <input 
-                  className="w-full rounded-2xl p-3" 
-                  type="text" 
-                  placeholder="OUARAS" 
-                />
-              </div>
-    
-              <div>
-                <label className=" text-[#E6AF2E] font-bold">Wilaya</label>
-                <input 
-                  className="w-full rounded-2xl p-3" 
-                  type="text" 
-                  placeholder="Algiers" 
-                />
-              </div>
-    
-              <div>
-                <label className=" text-[#E6AF2E] font-bold">Commune</label>
-                <input 
-                  className="w-full rounded-2xl p-3" 
-                  type="text" 
-                  placeholder="Bachdjerah" 
-                />
-              </div>
-    
-              <div>
-                <label className=" text-[#E6AF2E] font-bold">CV Attached</label>
-                <input 
-                  className="w-full rounded-2xl p-3" 
-                  type="text" 
-                  placeholder="CV2024-2025_OUARAS_Khelil_Rafik.pdf" 
                 />
               </div>
     
@@ -109,7 +73,6 @@ const UserProfile = () => {
               </div>
             </div>
           </div>
-          <footer className=' font-semibold flex justify-center p-3 bg-[#E6AF2E] '> 2025 @ Team SKY2.0|All rights reserved.</footer>
         </div>
       );
 };
